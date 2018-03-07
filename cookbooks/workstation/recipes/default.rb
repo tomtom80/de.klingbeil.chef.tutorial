@@ -1,6 +1,17 @@
 #
-# Cookbook:: workstation
+# Cookbook Name:: workstation
 # Recipe:: default
 #
-# Copyright:: 2018, The Authors, All Rights Reserved.
+# Copyright (c) 2015 The Authors, All Rights Reserved.
+
+
+#
+# The default recipe is the recipe that the cookbook is know most for
+# accomplishing. It is often the practice to use this file to include specific
+# recipes that perform a specific task.
+#
+# @see http://docs.chef.io/recipes.html#include-recipes
+#
+
+include_recipe 'workstation::vagrant'
 include_recipe 'workstation::setup'
